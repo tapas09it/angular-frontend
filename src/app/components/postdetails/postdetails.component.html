@@ -1,0 +1,53 @@
+
+    <div class="card-header  card-header-info">
+       <div class="row">
+            <div class="col-md-5" align="center">
+                <button mat-raised-button color="primary" (click)="onCreate()">ADD POST</button>
+            </div>
+           <!-- <div class="col-md-3" align="right">              
+            <mrpm-back-button>B</mrpm-back-button>
+           </div> -->
+        </div>
+    </div>
+
+    <div class="card-body"> 
+
+    <table mat-table [dataSource]="datasource" class="mat-elevation-z8">
+      
+        <!-- ID Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+      
+        <!-- Date Post Column -->
+        <ng-container matColumnDef="dateposted">
+          <th mat-header-cell *matHeaderCellDef> Date Posted </th>
+          <td mat-cell *matCellDef="let element"> {{element.datePosted | date: 'MM/dd/yyyy'}} </td>
+        </ng-container>
+      
+        <!-- Title Column -->
+        <ng-container matColumnDef="title">
+          <th mat-header-cell *matHeaderCellDef> Title </th>
+          <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+        </ng-container>
+      
+        <!-- Category Column -->
+        <ng-container matColumnDef="category">
+          <th mat-header-cell *matHeaderCellDef> Category </th>
+          <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+        </ng-container>
+
+        <!-- Delete Column -->
+        <ng-container matColumnDef="delete">
+            <th mat-header-cell *matHeaderCellDef> Delete </th>
+            <td mat-cell *matCellDef="let element" style="color:red"> DELETE </td>
+          </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      
+      
+</div>
+

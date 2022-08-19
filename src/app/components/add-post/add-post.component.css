@@ -1,0 +1,23 @@
+::ng-deep.mat-dialog-container {
+    resize: both; 
+    overflow: auto;
+    background: #fff;  
+  }
+  [mat-dialog-title] {
+    margin: -24px -24px 0px -24px !important;
+    padding: 10px 10px;
+    background: #00bcd4;
+    color: #fff;
+    cursor: move;
+    text-align: center;
+    height: 30px;
+  }
+  .cdk-overlay-pane{
+    width: unset !important;
+    height: unset !important;
+    max-width: 100% !important;
+  }
+  .maticonbutton{
+    margin-top: -15px;
+    cursor: pointer;
+  }

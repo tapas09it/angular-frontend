@@ -1,0 +1,30 @@
+.mat-table {
+    height: calc( 100vh - 277px);
+    overflow: auto; 
+    /* width: 150%; */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  /* .mat-column-dateposted {
+      flex: 0 0 15% !important;
+      width: 15px !important;
+  }
+  .mat-column-title {
+      flex: 0 0 10% !important;
+      width: 10px !important;
+  } */
+  .col-md-5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  table {
+    width: 99%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  th.mat-header-cell {
+    color: #080808;
+    background-color: #cccccc;
+    font-size: medium;
+  }
+  
